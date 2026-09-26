@@ -1,0 +1,38 @@
+# 1. Bỏ qua môi trường ảo và bộ nhớ đệm Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# 2. Bỏ qua cấu hình trình soạn thảo
+.vscode/
+.idea/
+
+# 3. Bỏ qua toàn bộ dữ liệu ảnh nặng (chỉ giữ lại file code/script)
+data/processed/
+data/raw/
+*.png
+*.jpg
+*.jpeg
+*.inkml
+
+# (Tùy chọn) Nếu đường dẫn trong annotations chứa ổ cứng cá nhân (D:/...), nên ignore luôn
+data/*_annotations.txt
+
+# 4. Bỏ qua file trọng số mô hình khi huấn luyện
+checkpoints/
+models/*.pth
+*.pt
+best_*.pth
+
+# 5. Bỏ qua log Tensorboard / WandB
+runs/
+logs/
+wandb/
+
+# 6. Bỏ qua các file tài liệu Word/PowerPoint tạm
+~$*.docx
+~$*.pptx
+*.docx
